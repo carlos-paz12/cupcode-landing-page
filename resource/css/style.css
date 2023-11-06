@@ -1,0 +1,252 @@
+@import url(variable.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 24px 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--gray-200);
+    font-size: 20px;
+}
+
+ion-icon {
+    color: var(--blue-dark);
+}
+
+.logo {
+    color: var(--blue-dark);
+    font-weight: 600;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-right: 40px;
+
+}
+
+.menu a:hover {
+    color: var(--blue-prime);
+}
+
+.intro {
+    background: var(--intro);
+}
+
+.tx-intro h1 span {
+    display: block;
+    color: var(--blue-prime);
+}
+
+.tx-intro h1 span {
+    overflow: hidden;
+    animation: typewriter 2s steps(14) infinite alternate-reverse forwards,
+        blink 400ms steps(13);
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+.tx-intro h1 {
+    max-width: 574px;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--gray-200);
+    margin-bottom: 66px;
+}
+
+.tx-intro a {
+    padding: 16px 36px;
+    border-radius: 50px;
+    color: var(--white-200);
+    background-color: var(--blue-prime);
+    transition: .5s;
+}
+
+.tx-intro a:hover {
+    background-color: var(--blue-dark);
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+#funcionalidades {
+    padding: 66px 0;
+}
+
+#funcionalidades .titulo, .titulo, #contato .titulo {
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+
+#funcionalidades .container {
+    flex-direction: column;
+}
+
+.container-func {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.func {
+    width: 200px;
+    text-align: center;
+    margin: 20px 60px;
+}
+
+.func ion-icon {
+    font-size: 60px;
+}
+
+#app {
+    background-color: var(--intro);
+}
+
+.tx-apps h1 {
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--gray-200);
+    margin-bottom: 24px;
+}
+
+.tx-apps p {
+    max-width: 444px;
+    line-height: 26px;
+    color: var(--gray);
+    margin-bottom: 28px;
+}
+
+.tx-apps a {
+    padding: 12px 26px;
+    border-radius: 50px;
+    color: var(--white-200);
+    background-color: var(--blue-prime);
+    transition: .5s;
+
+}
+
+.tx-apps a:hover {
+    background-color: var(--blue-dark);
+}
+
+#contato {
+    background-image: linear-gradient(45deg, #293145B3, #293145B3), url(../images/banner.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+}
+
+#contato .container .title {
+    margin-bottom: 93px;
+}
+
+#contato h1 {
+    color: var(--white);
+}
+
+#contato .container {
+    flex-direction: column;
+}
+
+#contato .container form {
+    display: flex;
+    justify-content: center;
+}
+
+#contato .container input[type="email"] {
+    border-bottom: 1px solid var(--white);
+    background: transparent;
+}
+
+#contato .container input {
+    line-height: normal;
+    line-height: 22px;
+    color: var(--white);
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+}
+
+#contato .container input[type="button"] {
+    padding: 8px 32px;
+    margin-left: 40px;
+    border-radius: 50px;
+    background: var(--prime-yellow);
+    cursor: pointer;
+}
+
+#contato .container input {
+    line-height: normal;
+    line-height: 22px;
+    color: var(--white);
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+footer .container {
+    flex-direction: column;
+    padding: 37px 20px;
+}
+
+footer .container p {
+    text-align: center;
+    line-height: 25px;
+    color: var(--gray-200);
+}
